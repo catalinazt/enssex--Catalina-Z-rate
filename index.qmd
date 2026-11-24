@@ -15,7 +15,7 @@ enssex <- read.csv("enssex_base1.csv")
 
 # FILTRO DE EDAD: quien colabora cambia solo estos dos números
 edad_min <- 30
-edad_max <- 29
+edad_max <- 44
 
 # p7 es el estado civil: 1 = Casado(a); 88 y 99 son "No sabe" y "No responde"
 personas <- subset(enssex, edad >= edad_min & edad <= edad_max & p7 %in% 1:8)
